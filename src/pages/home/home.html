@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>yupe</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 class="s">Welcome</h2>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+
+
+    </ion-item>
+  </ion-list>
+
+<ion-item *ngFor="let item of comment">
+  <ion-row>
+
+    <p>{{item}}</p></ion-row>
+  <ion-row>
+    <ion-col col-md-3 col-sm-4>
+      <button ion-button light small class="j" (click)="confirm()">Del</button>
+    </ion-col>
+
+</ion-row>
+</ion-item>
+
+<ion-item *ngFor="let item of students">
+  <ion-row>
+    <p>{{item.name}}</p>
+    <p>{{item.batch}}</p>
+    <p>{{item.year}}</p>
+  </ion-row>
+</ion-item>
+
+<ion-input type="text" [(ngModel)]="addcomments">
+</ion-input>
+<button ion-button (click)="addcomment()">add_comment</button>
+
+
+
+
+  <button ion-button round (click)="go()">Login</button>
+
+
+  <button ion-button (click)="gotosecondpage()">second</button>
+<ion-input type="text" [(ngModel)]="student_name"></ion-input>
+
+<ion-input type="text" [(ngModel)]="student_batch"></ion-input>
+<ion-input type="text" [(ngModel)]="student_year"></ion-input>
+<button ion-button (click)="addstudent()">add</button>
+</ion-content>
+
+
