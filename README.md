@@ -15,7 +15,7 @@ $ sudo npm install -g ionic cordova
 $ ionic start myTabs tabs
 ```
 
-Then, to run it, cd into `myTabs` and run:
+Then, to run it, cd into `myTabs`  and run:
 
 ```bash
 $ ionic cordova platform add ios
